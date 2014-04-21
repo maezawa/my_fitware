@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+.reveal .slides>section,
+.reveal .slides>section>section {
+	padding: 20px 1em !important;
+}
+
+section.bg{
+	background-color: rgba(255, 218, 223, 0.85);
+	border: 10px solid #fff !important;
+}
+
+h2.jp{
+	font-weight: bold;
+	letter-spacing: -0.05em;
+	font-size: 1.75em;
+	line-height: 1.5;
+}
+
+h3.jp{
+	font-weight: bold;
+	letter-spacing: -0.05em;
+	font-size: 1.25em;
+	line-height: 1.5;
+}
+
+.reveal p{
+	letter-spacing: -0.05em;
+}
+
+.reveal section img{
+	border: 7px solid #fff;
+}
+
+ul.ul_none{
+	list-style-type: none;
+	margin-left: 0;
+	margin: 0 300px;
+}
+
+.txt_center{
+	text-align: center;
+}
+
+.narrow{
+	letter-spacing: -0.05em;
+	padding: 1em !important;
+}
+
+.shoes{
+	background: url('../img/shoes.png') no-repeat left center;
+}
