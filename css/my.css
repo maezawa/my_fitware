@@ -26,7 +26,8 @@ h3.jp{
 
 .reveal p{
 	letter-spacing: -0.05em;
-}
+	margin-bottom: 1.25em !important;
+	font-weight: bold;}
 
 .reveal section img{
 	border: 7px solid #fff;
@@ -36,6 +37,10 @@ ul.ul_none{
 	list-style-type: none;
 	margin-left: 0;
 	margin: 0 300px;
+}
+
+li{
+	line-height: 2 !important;
 }
 
 .txt_center{
@@ -49,4 +54,49 @@ ul.ul_none{
 
 .shoes{
 	background: url('../img/shoes.png') no-repeat left center;
+}
+
+li.app_f, li.app_w{
+	position: absolute;
+	-webkit-transition: opacity 1s !important;
+	opacity: 1;
+}
+
+li.app_w{
+	top: -50%;
+	left: -10%;
+}
+
+li.app_f{
+	top: -50%;
+	right: -15%;
+}
+
+li.app_w img,
+li.app_f img{
+	border: none;
+	background: none;
+	box-shadow: none;
+}
+
+@-webkit-keyframes anime_f{
+	from{ -webkit-transform:translateX(0px);}
+	to{ -webkit-transform:translateX(-502px);}
+}
+
+@-webkit-keyframes anime_w{
+	from{ -webkit-transform:translateX(0px);}
+	to{ -webkit-transform:translateX(502px);}
+}
+
+li.app_f.go{
+	opacity: 0 !important;
+	/*-webkit-transform: translateX(-502px);*/
+	-webkit-animation:anime_f 0.5s linear 0s 1;
+}
+
+li.app_w.go{
+	opacity: 0 !important;
+	/*-webkit-transform: translateX(502px);*/
+	-webkit-animation:anime_w 0.5s linear 0s 1;
 }
