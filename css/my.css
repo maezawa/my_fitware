@@ -58,8 +58,6 @@ li{
 
 li.app_f, li.app_w{
 	position: absolute;
-	-webkit-transition: opacity 1s !important;
-	opacity: 1;
 }
 
 li.app_w{
@@ -79,24 +77,10 @@ li.app_f img{
 	box-shadow: none;
 }
 
-@-webkit-keyframes anime_f{
-	from{ -webkit-transform:translateX(0px);}
-	to{ -webkit-transform:translateX(-502px);}
-}
-
-@-webkit-keyframes anime_w{
-	from{ -webkit-transform:translateX(0px);}
-	to{ -webkit-transform:translateX(502px);}
-}
-
 li.app_f.go{
-	opacity: 0 !important;
-	/*-webkit-transform: translateX(-502px);*/
-	-webkit-animation:anime_f 0.5s linear 0s 1;
+	-webkit-transform: translateX(-502px);
 }
 
 li.app_w.go{
-	opacity: 0 !important;
-	/*-webkit-transform: translateX(502px);*/
-	-webkit-animation:anime_w 0.5s linear 0s 1;
+	-webkit-transform: translateX(502px);
 }
